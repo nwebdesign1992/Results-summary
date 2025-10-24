@@ -1,0 +1,238 @@
+/*Mobile first*/
+/*Global*/
+html{
+    box-sizing: border-box;
+}
+
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family : "Grotesk";
+    src : url(assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+body{
+    font-family: Grotesk, sna-serif;
+    width: 379px;
+    background-color: hsl(241, 100%, 89%);
+    margin: 0;
+}
+
+/* The main element that encompasses all the elements */
+
+.main-container{
+    width: 379px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: hsl(0, 0%, 100%);
+    /*margin: 0;*/
+}
+
+/*result section*/
+.result{
+    width : inherit;
+    height: 340px;
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.result h2{
+    text-align: center;
+    color:hsl(241, 100%, 89%);
+}
+
+.result-and-total{
+    width : 150px;
+    height : 150px;
+    text-align:center;
+    margin : 0 auto;
+    margin-bottom: 20px;
+    border-radius : 50%;
+    /*border:solid;*/
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+
+}
+
+.your-result{
+    display: block;
+    font-size: 60px;
+    font-weight: 700;
+    padding-top: 20px;
+    color: hsl(0, 0%, 100%);
+}
+
+.total{
+    font-weight: 700;
+    display: block;
+    padding-top: 10px;
+    color: hsl(241, 100%, 89%);
+}
+
+.motivational-message{
+    display: block;
+    color: hsl(0, 0%, 100%);
+    font-size: x-large;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.your-rate{
+    width: 260px;
+    text-align: center;
+    margin: 0 auto;
+    color: hsl(241, 100%, 89%);
+}
+
+/*Summary section*/
+.summary{
+    /*background-color: blue;*/
+    width: 300px;
+    height: 459px;
+    margin: 0 auto;
+    color: hsl(224, 30%, 27%);
+}
+
+.summary h2{
+    color: hsl(224, 30%, 27%);
+}
+
+.list-items{
+    width: inherit;
+    display: grid;
+    grid-row-gap: 10px;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.item{
+    /*width: 250px;*/
+    height: 60px;
+    display: grid;
+    grid-template-columns: 1fr 5fr 2fr 2fr;
+    border-radius: 15px;
+    /*border: solid 1px black;*/
+    padding: 20px 5px;
+    background-color: hsl(221, 100%, 96%);
+}
+
+.item img{
+    margin-left: 5px;
+}
+
+.reaction .item-title{
+    color: hsl(0, 100%, 67%);
+}
+
+.memory .item-title{
+    color: hsl(39, 100%, 56%);
+}
+
+.verbal .item-title{
+    color: hsl(166, 100%, 37%);
+}
+
+.visual .item-title{
+    color: hsl(234, 85%, 45%);
+}
+
+.item-score{
+    color: hsl(224, 30%, 27%);
+    text-align: right;
+    font-weight: 700;
+}
+
+.total-score{
+    text-align: left;
+    color: hsl(241, 100%, 89%);
+    font-weight: 700;
+}
+
+
+.summary button{
+    font-size: large;
+    width: 300px;
+    height: 60px;
+    margin: 0 auto;
+    border-radius: 30px;
+    background-color: hsl(224, 30%, 27%);
+    color: hsl(0, 0%, 100%);
+    border:hidden;
+}
+
+.summary button:active{
+    background-image:linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    height: 10px;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 380px){
+
+    body{
+        width: 1440px;
+        height: 100%;
+        display:grid;
+        grid-template-rows: 800px, 20px;
+        place-items:center;
+
+    }
+
+    .main-container{
+        width: 750px;
+        height: 500px;
+        flex-wrap: no-wrap;
+        /*margin: 0 auto;*/
+        border-radius: 30px;
+    }
+
+    /*result section*/
+    .result{
+        width : 375px;
+        height: 500px;
+        border-radius: 30px;
+    }
+
+    .result-and-total{
+        width : 200px;
+        height : 200px;
+        margin-bottom: 40px;
+        border-radius : 50%;
+        background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    }
+
+    .result h2{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .your-result{
+        padding-top: 40px;
+
+    }
+
+    .your-rate{
+        width: 230px;
+
+    }
+
+    /*summary section*/
+    .summary h2{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .item{
+        margin-bottom: 5px;
+    }
+
+}

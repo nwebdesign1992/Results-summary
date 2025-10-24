@@ -89,7 +89,6 @@ body{
 
 /*Summary section*/
 .summary{
-    /*background-color: blue;*/
     width: 300px;
     height: 459px;
     margin: 0 auto;
@@ -108,12 +107,10 @@ body{
 }
 
 .item{
-    /*width: 250px;*/
     height: 60px;
     display: grid;
     grid-template-columns: 1fr 5fr 2fr 2fr;
     border-radius: 15px;
-    /*border: solid 1px black;*/
     padding: 20px 5px;
     background-color: hsl(221, 100%, 96%);
 }
@@ -182,7 +179,7 @@ body{
         width: 1440px;
         height: 100%;
         display:grid;
-        grid-template-rows: 800px, 20px;
+        grid-template-rows: 880px 20px;
         place-items:center;
 
     }
@@ -191,7 +188,6 @@ body{
         width: 750px;
         height: 500px;
         flex-wrap: no-wrap;
-        /*margin: 0 auto;*/
         border-radius: 30px;
     }
 
